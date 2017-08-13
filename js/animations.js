@@ -1,3 +1,4 @@
+
 if ($('#back-to-top').length) {
     var scrollTrigger = 1500, // px
         backToTop = function () {
