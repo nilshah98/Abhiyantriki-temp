@@ -1,4 +1,19 @@
+@media screen and (max-width: 600px)
+{
+  #section2, #secton3, #section4, #section5, #section6, #section7{
+    font-size:5vmin;
+  }
+  #section1 .section_content1{
+    font-size:5vmin;
+  }
+}
+@media screen and (min-width: 600px)
+{
+  #section1, #section2, #secton3, #section4, #section5, #section6, #section7{
+    font-size:20px;
+  }
 
+}
 body{
   /*padding-top: 20px;*/
   width: 100%; height: 100%; position: absolute;
@@ -83,7 +98,7 @@ body{
   margin: auto;
 }
 .section > .section_image2{
-  display: none;
+  /*display: none;*/
   background: url('../bg_images/img_02.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -97,10 +112,10 @@ body{
 @media screen and (max-width: 990px)
 {
   .section > .section_image2{
-    display: none;
+    height: 50vh;
   }
   .section > .section_content2{
-    height: 100vh;
+    height: 50vh;
   }
   .section > .section_content2 > .section2_text > p{
     text-align: center;
@@ -167,7 +182,7 @@ body{
 #section1{
     position: relative;
     color: white;
-    font-size: 20px;
+    /*font-size: 20px;*/
     height:100vh;
     margin: 0px 0px 0px 0px;
     background-attachment: fixed;
@@ -179,7 +194,7 @@ body{
 #section2{
     position: relative;
     color:black;
-    font-size: 20px;
+    /*font-size: 20px;*/
     min-height:100vh;
     width: 100%;
     padding: 0px 0px 0px 0px;
@@ -197,7 +212,7 @@ body{
 
 #section3{
     color:white;
-    font-size: 20px;
+    /*font-size: 20px;*/
     min-height:100vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
@@ -211,7 +226,7 @@ body{
 
 #section4{
     color:white;
-    font-size: 20px;
+    /*font-size: 20px;*/
     min-height:100vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
@@ -224,7 +239,7 @@ body{
 
 #section5{
     color:white;
-    font-size: 20px;
+    /*font-size: 20px;*/
     min-height:100vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
@@ -237,7 +252,7 @@ body{
 
 #section6{
     color:white;
-    font-size: 20px;
+    /*font-size: 20px;*/
     min-height:100vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
@@ -250,7 +265,7 @@ body{
 
 #section7{
     color:white;
-    font-size: 20px;
+    /*font-size: 20px;*/
     height:85vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
