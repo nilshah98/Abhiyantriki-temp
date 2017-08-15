@@ -1,4 +1,13 @@
+// Animation forsection 2 fade in
+$(function() {
+$('#section2').hover(function() {
+    $('.section > .section_image2').fadeIn();
+}, function() {
+    $('.section > .section_image2').fadeOut();
+});
+});
 
+// Animation for sparrow, smooth scroll to top
 if ($('#back-to-top').length) {
     var scrollTrigger = 1500, // px
         backToTop = function () {
@@ -20,6 +29,7 @@ if ($('#back-to-top').length) {
         }, 700);
     });
 }
+
 // For smooth scroll-
 $("#myNavbar ul li a[href^='#']").on('click', function(e) {
 
@@ -64,6 +74,8 @@ $("#myNavbar ul li a[href^='#']").on('click', function(e) {
 /* Demo Scripts for Bootstrap Carousel and Animate.css article
 * on SitePoint by Maria Antonietta Perna
 */
+
+// Carousel Animations
 (function( $ ) {
 
   //Function to animate slider captions

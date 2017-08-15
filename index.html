@@ -1,210 +1,296 @@
-<!-- TODO:
-Smooth Scroll
-Padding to sections -->
+<!-- TODO
+Remove container div from each section-->
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/effects.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- What does the above line do? -->
-    <title>Abhiyantriki 2017</title>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS FILES-->
+  <link rel="stylesheet" type="text/css" href="css/effects.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- JS FILES -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- What does the above line do? -->
+  <title>Abhiyantriki 2017</title>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- above attributes, so as to highlight the sections on navbar when scrolling -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="nav_bar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+  <!-- above attributes, so as to highlight the sections on navbar when scrolling -->
+  <!-- BOOTSTRAP NAVBAR -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="nav_bar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#" id="logo"><img src="branding/logo.png" id="logo"></a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#section1">EVENTS</a></li>
+            <li><a href="#section2">SPEAKERS</a></li>
+            <li><a href="#section3">TECH EXPO</a></li>
+            <li><a href="#section4">SPONSORS</a></li>
+            <li><a href="#section5">PARVAAH</a></li>
+            <li><a href="#section6">CONTACT</a></li>
+            <li><a href="#section7">ABOUT</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#section1">EVENTS</a></li>
-          <li><a href="#section2">SPEAKERS</a></li>
-          <li><a href="#section3">TECH EXPO</a></li>
-          <li><a href="#section4">SPONSORS</a></li>
-          <li><a href="#section5">PARVAAH</a></li>
-          <li><a href="#section6">CONTACT</a></li>
-          <li><a href="#section7">ABOUT</a></li>
-      </ul>
-  </div>
-</div>
-</div>
-</nav>
+  </nav>
 
-<!-- <div class="container"> -->
-    <div id="section1" class="section">
+  <!-- SECTION 1 (Containing background video) -->
+  <div id="section1" class="section">
+    <!-- Inserting BG Video: -->
+    <div class="fullscreen-bg">
+      <div class="fullscreen-bg__video"></div>
+      <video loop muted autoplay class="fullscreen-bg__video">
+ <!--        <source src="bg_video/BG_vid.m4v" type="video/mp4"> -->
+          <source src="bg_video/BG_vid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- End of BG Video -->
+        <!-- Inserting container inside section 1 -->
+        <div class="container">
+          <!-- Inserting Animation (Only for desktop)-->
+          <div class="content" style="margin-top: 20px;">
+            <div class="content__container" >
+              <p class="content__container__text">
+                Kemcho
+              </p>
 
-
-        <div class="fullscreen-bg">
-                        <div class="fullscreen-bg__video"></div>
-            <video loop muted autoplay class="fullscreen-bg__video">
-            <source src="bg_video/BG_vid.m4v" type="video/mp4">
-                <source src="bg_video/BG_vid.mp4" type="video/mp4">
-                </video>
+              <ul class="content__container__list">
+                <li class="content__container__list__item" style="color: #a8518a;">world !</li>
+                <li class="content__container__list__item" style="color: #a8518a;">Somaiyaite !</li>
+                <li class="content__container__list__item" style="color: #a8518a;">users !</li>
+                <li class="content__container__list__item" style="color: #a8518a;">everybody !</li>
+              </ul>
             </div>
-            <div class="container">
+          </div>
+          <!-- End Of Animation -->
 
-<div class="content" style="margin-top: 20px;">
-  <div class="content__container" >
-    <p class="content__container__text">
-      Hello
-    </p>
+          <!-- Section Text Content -->
+          <div class="section_content1">
+            <h1><strong style="color: #a8518a;">Lorem</strong> Ipsum</h1>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- End of Text Content -->
 
-    <ul class="content__container__list">
-      <li class="content__container__list__item">world !</li>
-      <li class="content__container__list__item">bob !</li>
-      <li class="content__container__list__item">users !</li>
-      <li class="content__container__list__item">everybody !</li>
-    </ul>
-  </div>
-</div>
+            <!-- Social Media Widget Plugin -->
+            <div class="social_widgets" style="margin-top: 85vh;">
+              <!-- Facebook Widget -->
+              <div style="float:left;">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fkjsceabhiyantriki%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=false&height=80&appId&colorscheme=dark" width="200" height="25" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+              </div>
+              <!-- Twitter Widget -->
+              <div style="float: right;">
+                <iframe
+                src="https://platform.twitter.com/widgets/follow_button.html?screen_name=kjsabhiyantriki&show_screen_name=false&show_count=true&size=s"
+                title="Follow TwitterDev on Twitter"
+                width="200"
+                height="25"
+                style="border: 0; overflow: hidden;"
+                ></iframe>
+              </div>
+            </div>
+            <!-- End Of Social Media Widget -->
+          </div>
+          <!-- End Of Section 1 Container -->
+        </div>
+        <!-- Enf Of Section 1 -->
 
+        <!-- SECTION 2 (Placeholder) -->
+        <div id="section2" class="section">
+          <!-- Section 2 container -->
+          <div class="col-md-6 section_content2">
+          <div class="section2_text">
+          <p style="text-align: right;">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          </div>
+          </div>
+          <div class="col-md-6 section_image2"></div>
 
-<!-- <div   id="social">
-<ul class="icon-effect icon-effect-1a">
-  <li><a href="#" class="icon"><i class="fa fa-facebook"></i></a></li>
-  <li><a href="#" class="icon"><i class="fa fa-twitter"></i></a></li>
-  <li><a href="#" class="icon"><i class="fa fa-instagram"></i></a></li>
-  <li><a href="#" class="icon"><i class="fa fa-youtube-play"></i></a></li>
-</ul>
-</div> -->
+          <!-- End Of Section 2 Container -->
+        </div>
+        <!-- End Of Section 2 -->
+
+        <!-- SECTION 2 (Containing Carousel) -->
+        <div id="section3" class="section">
+          <!-- CAROUSEL -->
+          <div id="carousel-example-generic" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <!-- First slide -->
+              <div class="item active deepskyblue">
+
+                <div class="carousel-caption">
+                  <h3 data-animation="animated bounceInLeft">
+                    This is the caption for slide 1
+                  </h3>
+                  <h3 data-animation="animated bounceInRight">
+                    This is the caption for slide 1
+                  </h3>
+                  <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
+                </div>
+              </div> <!-- /.item -->
+
+              <!-- Second slide -->
+              <div class="item skyblue">
+                <div class="carousel-caption">
+                  <h3 class="icon-container" data-animation="animated bounceInDown">
+                    <span class="glyphicon glyphicon-heart"></span>
+                  </h3>
+                  <h3 data-animation="animated bounceInUp">
+                    This is the caption for slide 2
+                  </h3>
+                  <button class="btn btn-primary btn-lg" data-animation="animated zoomInRight">Button</button>
+                </div>
+              </div><!-- /.item -->
+
+              <!-- Third slide -->
+              <div class="item darkerskyblue">
+                <div class="carousel-caption">
+                  <h3 class="icon-container" data-animation="animated zoomInLeft">
+                    <span class="glyphicon glyphicon-glass"></span>
+                  </h3>
+                  <h3 data-animation="animated flipInX">
+                    This is the caption for slide 3
+                  </h3>
+                  <button class="btn btn-primary btn-lg" data-animation="animated lightSpeedIn">Button</button>
+                </div>
+              </div><!-- /.item -->
+
+            </div><!-- /.carousel-inner -->
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div><!-- /.carousel -->
+          <!-- End of Carousel -->
+        </div>
+        <!-- End of Section 3 -->
+
+        <!-- SECTION 4 -->
+        <div id="section4" class="section">
+          <div class="container">
+            <div class="section_content4">
+              <p style="text-align: center;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
+            </p>
             </div>
+          </div>
         </div>
 
-    <div id="section2" class="section"><div class="container">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s</div></div>
-    <div id="section3" class="section">
-   <!-- <div class="container main-container"> -->
-    <div id="carousel-example-generic" class="carousel slide">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-
-        <!-- First slide -->
-        <div class="item active deepskyblue">
-
-          <div class="carousel-caption">
-            <h3 data-animation="animated bounceInLeft">
-              This is the caption for slide 1
-            </h3>
-            <h3 data-animation="animated bounceInRight">
-              This is the caption for slide 1
-            </h3>
-            <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
+        <!-- SECTION 5 -->
+        <div id="section5" class="section">
+          <div class="container">
+            <div class="section_content5">
+              <p style="text-align: center;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
+            </p>
+            </div>
           </div>
-        </div> <!-- /.item -->
+        </div>
 
-        <!-- Second slide -->
-        <div class="item skyblue">
-          <div class="carousel-caption">
-            <h3 class="icon-container" data-animation="animated bounceInDown">
-              <span class="glyphicon glyphicon-heart"></span>
-            </h3>
-            <h3 data-animation="animated bounceInUp">
-              This is the caption for slide 2
-            </h3>
-            <button class="btn btn-primary btn-lg" data-animation="animated zoomInRight">Button</button>
+        <!-- SECTION 6 -->
+        <div id="section6" class="section">
+          <div class="container">
+            <div class="section_content6">
+              <p style="text-align: center;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
+            </p>
+            </div>
           </div>
-        </div><!-- /.item -->
+        </div>
 
-        <!-- Third slide -->
-        <div class="item darkerskyblue">
-          <div class="carousel-caption">
-            <h3 class="icon-container" data-animation="animated zoomInLeft">
-              <span class="glyphicon glyphicon-glass"></span>
-            </h3>
-            <h3 data-animation="animated flipInX">
-              This is the caption for slide 3
-            </h3>
-            <button class="btn btn-primary btn-lg" data-animation="animated lightSpeedIn">Button</button>
+        <!-- SECTION 7 -->
+        <div id="section7" class="section">
+          <div class="container">
+            <div class="section_content7">
+              <p style="text-align: center;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
+            </p>
+            </div>
           </div>
-        </div><!-- /.item -->
+        </div>
 
-      </div><!-- /.carousel-inner -->
+        <!-- Bottom-most social media div -->
+        <div id="socialdiv">
+          <!-- Difference between div and footer ? -->
+          <div  id="socialx" >
+            <!-- Created a different id here, so as to target the social media buttons -->
+            <ul class="icon-effect icon-effect-1a" style="text-align: center;">
+              <li><a target="_blank" href="https://www.facebook.com/kjsceabhiyantriki/" class="icon"><i class="fa fa-facebook"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/kjsabhiyantriki" class="icon"><i class="fa fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/kjscelive/" class="icon"><i class="fa fa-instagram"></i></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/kjscelive" class="icon"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+          <div><p style="text-align: center; color: white;">Designed And Developed By-Team Abhiyantriki '17</p></div>
 
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-    </div>
-    <div id="section4" class="section"><div class="container">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s</div></div>
-    <div id="section5" class="section"><div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s</div></div>
-    <div id="section6" class="section"><div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s</div></div>
-    <div id="section7" class="section"><div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s</div></div>
+          <!-- Sparrow to topmost section -->
+        </div>
+        <div id="content">Scroll <i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
-    <!-- </div> -->
-    <footer>
-    <div  id="socialx" >
-<ul class="icon-effect icon-effect-1a" style="text-align: center;">
-  <li><a target="_blank" href="https://www.facebook.com/kjsceabhiyantriki/" class="icon"><i class="fa fa-facebook"></i></a></li>
-  <li><a target="_blank" href="https://twitter.com/kjsabhiyantriki" class="icon"><i class="fa fa-twitter"></i></a></li>
-  <li><a target="_blank" href="https://www.instagram.com/kjscelive/" class="icon"><i class="fa fa-instagram"></i></a></li>
-  <li><a target="_blank" href="https://www.youtube.com/kjscelive" class="icon"><i class="fa fa-youtube-play"></i></a></li>
-</ul>
-</div>
-<div><p style="text-align: center; color: white;">Designed And Developed By-Team Abhiyantriki '17</p></div>
+        <script type="text/javascript" src="js/animations.js"></script>
 
-    </footer>
-<div id="content">Scroll &darr;</div>
-<a href="#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-<script type="text/javascript" src="js/jquery-sectionsnap.js"></script>
-<!-- Above script to scroll to next section on a single mouse roll -->
-<script type="text/javascript" src="js/animations.js"></script>
-
-</body>
-</html>
+      </body>
+      </html>
