@@ -1,12 +1,23 @@
-// Animation forsection 2 fade in
-$(function() {
-$('#section2').hover(function() {
-    $('.section > .section_image2').fadeIn();
-}, function() {
-    $('.section > .section_image2').fadeOut();
-});
-});
+const mq = window.matchMedia( "(min-width: 992px)" );
+if(mq.matches){
+  // Animation forsection 2 fade in
+  $(function() {
+  $('#section2').hover(function() {
+      $('.section > .section_image2').fadeIn();
+  }, function() {
+      $('.section > .section_image2').fadeOut();
+  });
+  });
 
+  // for section 3 fade in
+  $(function() {
+  $('#section3').hover(function() {
+      $('.section > .section_image3').fadeIn();
+  }, function() {
+      $('.section > .section_image3').fadeOut();
+  });
+  });
+}
 // Animation for sparrow, smooth scroll to top
 if ($('#back-to-top').length) {
     var scrollTrigger = 1500, // px
