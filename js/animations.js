@@ -52,7 +52,7 @@ $("#myNavbar ul li a[href^='#']").on('click', function(e) {
 
    // animate
    $('html, body').animate({
-       scrollTop: $(hash).offset().top
+       scrollTop: $(hash).offset().top-50
      }, 1000, function(){
 
        // when done, add hash to url
