@@ -1,3 +1,36 @@
+
+$('.circle-plus').on('click', function(){
+  $(this).toggleClass('opened');
+  // if ($(this).hasClass('closed')) {
+  //   $(this).removeClass('closed').addClass('opened');
+  // } else {
+  //   $(this).removeClass('opened').addClass('closed');
+  // }
+})
+$('.circle-plus').click(function(){
+        $('#home').toggleClass('on');
+});
+$('.circle-plus').click(function(){
+        $('#menu1').toggleClass('on');
+});
+$('.circle-plus').click(function(){
+        $('body').toggleClass('on');
+});
+
+$('#myNavbar').click(function(){
+$( "#myNavbar ul .active" ).each(function( index ) {
+  // alert( $( this ).text() );
+  if( $( this ).text()=="CONTACT" && $('.circle-plus').hasClass('opened'))
+  {
+    // alert("works");
+    $('.circle-plus').click();
+    // $('#home').toggleClass('on');
+    // $('#menu1').toggleClass('on');
+  }
+});
+});
+
+// alert("Connected!")
 const mq = window.matchMedia( "(min-width: 992px)" );
 if(mq.matches){
   // Animation forsection 2 fade in

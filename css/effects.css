@@ -1,3 +1,45 @@
+#home::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+  /*border-radius: 10px;*/
+  background-color: #a8518a;
+}
+
+#home::-webkit-scrollbar
+{
+  width: 1em;
+  background-color: #F5F5F5;
+}
+
+#home::-webkit-scrollbar-thumb
+{
+  /*border-radius: 10px;*/
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+  background-color: #333;
+}
+#menu1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+  /*border-radius: 10px;*/
+  background-color: #a8518a;
+}
+
+#menu1::-webkit-scrollbar
+{
+  width: 1em;
+  background-color: #F5F5F5;
+}
+
+#menu1::-webkit-scrollbar-thumb
+{
+  /*border-radius: 10px;*/
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+  background-color: #333;
+}
+#section6 h6
+{
+  color: black;
+}
 body::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
@@ -18,7 +60,15 @@ body::-webkit-scrollbar-thumb
   background-color: #a8518a;
 }
 
-@media screen and (max-width: 450px)
+/*@media screen and (min-width: 450px && min-height: 450px)
+{
+  #section1, #section2, #section3, #section4, #section5, #section6, #section7{
+    font-size:23px;
+  }
+
+}
+
+@media screen and (max-width: 450px || max-height: 450px )
 {
   #section2, #section3, #section4, #section5, #section6, #section7{
     font-size:5vmin;
@@ -26,14 +76,7 @@ body::-webkit-scrollbar-thumb
   #section1 .section_content1{
     font-size:5vmin;
   }
-}
-@media screen and (min-width: 450px)
-{
-  #section1, #section2, #section3, #section4, #section5, #section6, #section7{
-    font-size:23px;
-  }
-
-}
+}*/
 body{
   /*padding-top: 20px;*/
   width: 100%; height: 100%; position: absolute;
@@ -50,13 +93,18 @@ body{
     src: url('../fonts/Coves-Bold.otf') format('opentype');
     font-weight: bold;
 }
+h1,h2,h3,h4,h5,h6
+{
+  font-family: Coves !important;
+  font-weight: bold !important;
+}
 
 /*MAIN PAGE SECTION CSS:*/
 
 /*Deactivate social widget buttons for small screens, since overlapping*/
 /*Or can activate only one of them and keep content less*/
 
-@media screen and (max-width: 510px)
+@media screen and (max-width: 510px),  screen and (max-height: 350px)
 {
   .social_widgets{
     display: none;
@@ -72,7 +120,7 @@ body{
     height: 100vh;
     min-width: 100%;
     /*padding: 50px;*/
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     /*Giving an opacity layer*/
 }
 
@@ -87,7 +135,7 @@ body{
 .section > .container > .section_content1{
   position: absolute;
   /*position absolute wrt container div, which is parent div*/
-  top: 0;
+  top: 60px;
   bottom: 0;
   left:0;
   right: 0;
@@ -327,18 +375,7 @@ body{
     background-size: cover;*/
 }
 
-#section6{
-    color:white;
-    /*font-size: 20px;*/
-    min-height:100vh;
-    max-width: 100%;
-    padding: 0px 0px 0px 0px;
-    background: url('../bg_images/temp1.jpg');
-    /*background-attachment: fixed;*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 #section7{
     color:white;
@@ -781,4 +818,139 @@ padding: 10px;
 z-index: 1000;
 font-size: 0.7em;
 /*color: #fff;*/
+}
+body
+{
+    overflow-x: hidden;
+}
+/*.nav
+{
+    height: 7vh;
+}*/
+
+#home
+{
+    height:85vh;
+    overflow: hidden;
+}
+#home.on
+{
+    overflow: auto;
+}
+#menu1
+{
+    height:85vh;
+    overflow: hidden;
+}
+#menu1.on
+{
+    overflow: auto;
+}
+body.on
+{
+    overflow-y: hidden;
+}
+.closed .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+}
+.closed .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+.opened {
+  opacity: 1;
+}
+.opened .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+}
+.opened .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+.circle-plus {
+  position: absolute;
+  /*height: 10vh;*/
+  bottom: 10px;
+  /*z-index: 1000;*/
+  width: 4em;
+  font-size: 1em;
+  margin: auto;
+  padding-bottom: 5px;
+  opacity: 1;
+  width: 100vw;
+  /*background: white;*/
+}
+#section6{
+  position: relative;
+    color:white;
+    /*font-size: 20px;*/
+    /*min-height:100vh;*/
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    background: white;
+    /*background: url('../bg_images/temp1.jpg');*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    height: 93vh;
+    overflow: hidden;
+}
+.circle-plus .circle {
+  position: relative;
+  margin: auto;
+  width: 2.55em;
+  height: 2.5em;
+  border-radius: 100%;
+  border: solid 0.4em rgba(0,0,0,0.2);
+}
+.circle-plus .circle .horizontal {
+  position: absolute;
+  background-color: #a8518a;
+  background-color: #a8518a;
+  width: 30px;
+  height: 5px;
+  left: 50%;
+  margin-left: -15px;
+  top: 50%;
+  margin-top: -2.5px;
+}
+.circle-plus .circle .vertical {
+  position: absolute;
+  background-color: #a8518a;
+  width: 5px;
+  height: 30px;
+  left: 50%;
+  margin-left: -2.5px;
+  top: 50%;
+  margin-top: -15px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+{
+    background: #a8518a !important;
+    border: none !important;
+    /*height: 50px !important;*/
+
+}
+.nav
+{
+  /*height: 50px !important;*/
+    background: #1e1e1e !important;
+}
+.nav-tabs>li>a
+{
+    color: #fff !important;
+    /*border:1px solid #000 !important;*/
+    /*height: 50px !important;*/
+}
+
+.nav-tabs li a:hover
+{
+    background: #a8518a !important;
+    border:1px solid #000 !important;
+    /*height: 50px !important;*/
 }
