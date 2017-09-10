@@ -391,7 +391,7 @@ h1,h2,h3,h4,h5,h6
 #section7{
     color:white;
     /*font-size: 20px;*/
-    height:85vh;
+    height:100vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
     background: url('../bg_images/cs_bg.png');
@@ -964,4 +964,28 @@ body.on
     background: #a8518a !important;
     border:1px solid #000 !important;
     /*height: 50px !important;*/
+}
+#contactcontent
+{
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+#map
+{
+  padding:10px 10px 10px 10px;
+  float: right;
+}
+@media screen and (max-width: 768px)
+{
+  #map, #contactcontent
+  {
+    height: 50vh
+  }
+}
+@media screen and (min-width: 768px)
+{
+  #map, #contactcontent
+  {
+    height: 100vh
+  }
 }
