@@ -163,7 +163,7 @@ h1,h2,h3,h4,h5,h6
   width: 80%;
   height: 50%;
   /*Setting a wwidth and height is necessary for margin auto to work*/
-  margin: auto;
+  margin:auto;
 }
 .section > .section_image2{
   /*display: none;*/
@@ -210,7 +210,7 @@ h1,h2,h3,h4,h5,h6
   width: 80%;
   height: 50%;
   /*Setting a wwidth and height is necessary for margin auto to work*/
-  margin: auto;
+  margin:auto;
 }
 .section > .section_image3{
   /*display: none;*/
@@ -234,6 +234,17 @@ h1,h2,h3,h4,h5,h6
   }
   .section > .section_content3 > .section3_text > p{
     text-align: center;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  .section > .section_content3 > .section3_text
+  {
+    margin: 20px auto;
+  }
+  .section > .section_content2 > .section2_text
+  {
+    margin: 20px auto;
   }
 }
 @media screen and (min-width: 992px)
