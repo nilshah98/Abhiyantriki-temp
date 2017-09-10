@@ -51,7 +51,7 @@ body
 #section6
 {
     height: 100vh;
-    color: #fff;
+    /*color: #fff;*/
 }
 #home, #menu1
 {
@@ -77,4 +77,9 @@ body
 .navbar-inverse .navbar-nav>.active>a
 {
     background: #a8518a !important;
+}
+h6,h5,h2
+{
+  font-family: "Roboto" !important;
+  font-weight: 900 !important;
 }
