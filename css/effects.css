@@ -385,7 +385,18 @@ h1,h2,h3,h4,h5,h6
     background-repeat: no-repeat;
     background-size: cover;*/
 }
-
+#section6{
+    color:white;
+    /*font-size: 20px;*/
+    height:100vh;
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    background: url('../bg_images/parvaah_bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 #section7{
@@ -542,13 +553,13 @@ h1,h2,h3,h4,h5,h6
 
 /* Animation delays */
 .carousel-caption h3:first-child {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .carousel-caption h3:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 .carousel-caption button {
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 
 h1 {
@@ -895,22 +906,7 @@ body.on
   width: 100vw;
   /*background: white;*/
 }
-#section6{
-  position: relative;
-    color:white;
-    /*font-size: 20px;*/
-    /*min-height:100vh;*/
-    max-width: 100%;
-    padding: 0px 0px 0px 0px;
-    background: white;
-    /*background: url('../bg_images/temp1.jpg');*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    height: 93vh;
-    overflow: hidden;
-}
+
 .circle-plus .circle {
   position: relative;
   margin: auto;
@@ -988,4 +984,16 @@ body.on
   {
     height: 100vh
   }
+}
+#parvaahlogo
+{
+  padding-top: 10vh;
+  height: 50vh;
+  text-align: center;
+}
+#parvaahcontent
+{
+  padding-top: 20vh;
+  height: 50vh;
+  text-align: center;
 }
