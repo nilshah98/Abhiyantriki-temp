@@ -1,3 +1,11 @@
+var interval = setInterval(function() {
+    if(document.readyState === 'complete') {
+     var loader = document.getElementById('loader');
+      loader.style.display = 'none';
+        clearInterval(interval);
+        done();
+    }
+}, 100);
 
 $('.circle-plus').on('click', function(){
   $(this).toggleClass('opened');
