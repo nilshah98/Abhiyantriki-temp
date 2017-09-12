@@ -18,17 +18,7 @@ $("#myCarousel").swipe({
 
 });
 
-$("#carousel-example-generic").swipe({
 
-  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-    if (direction == 'left') $(this).carousel('next');
-    if (direction == 'right') $(this).carousel('prev');
-
-  },
-  allowPageScroll:"vertical"
-
-});
 $('.circle-plus').on('click', function(){
   $(this).toggleClass('opened');
   // if ($(this).hasClass('closed')) {

@@ -597,7 +597,7 @@ h1,h2,h3,h4,h5,h6
 .carousel-caption h3:nth-child(2) {
   animation-delay: 2s;
 }
-.carousel-caption button {
+.carousel-caption a {
   animation-delay: 3s;
 }
 
