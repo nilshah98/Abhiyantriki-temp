@@ -6,6 +6,14 @@
 //         done();
 //     }
 // }, 100);
+  $(document).ready(function() {
+       $("#myCarousel").swiperight(function() {
+          $(this).carousel('prev');
+          });
+       $("#myCarousel").swipeleft(function() {
+          $(this).carousel('next');
+     });
+  });
 
 $('.circle-plus').on('click', function(){
   $(this).toggleClass('opened');
