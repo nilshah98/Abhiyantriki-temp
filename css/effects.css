@@ -1,3 +1,23 @@
+@font-face {
+    font-family: Coves;
+    src: url('../fonts/Coves-Light.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Coves;
+    src: url('../fonts/Coves-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+*
+{
+  font-family: "Roboto";
+}
+* h1,h2,h3,h4,h5,h6
+{
+  font-family: Coves !important;
+  font-weight: bold !important;
+}
 /*#loader {
               position: fixed;
               left: 0px;
@@ -120,22 +140,12 @@ body{
   width: 100%; height: 100%; position: absolute;
 }
 /*Importing Fonts COVES*/
-@font-face {
-    font-family: Coves;
-    src: url('../fonts/Coves-Light.otf') format('opentype');
-    font-weight: normal;
-}
 
-@font-face {
-    font-family: Coves;
-    src: url('../fonts/Coves-Bold.otf') format('opentype');
-    font-weight: bold;
-}
-h1,h2,h3,h4,h5,h6
+/*h1,h2,h3,h4,h5,h6
 {
   font-family: Coves !important;
   font-weight: bold !important;
-}
+}*/
 
 /*MAIN PAGE SECTION CSS:*/
 
@@ -211,8 +221,17 @@ h1,h2,h3,h4,h5,h6
     background-size: contain;
   height: 100vh;
 }
-.section > .section_content2 > .section2_text > p{
+.section > .section_content2 > .section2_text {
     text-align: right;
+  }
+.section > .section_content3 > .section3_text {
+    text-align: left;
+  }
+.section > .section_content3 > .section3_text > h1 {
+    text-align: left !important;
+  }
+.section > .section_content2 > .section2_text > h1{
+    text-align: right !important;
   }
 /*Adjusting the section2 for smaller screens*/
 @media screen and (max-width: 992px)
@@ -226,9 +245,19 @@ h1,h2,h3,h4,h5,h6
   .section > .section_content2{
     height: 50vh;
   }
-  .section > .section_content2 > .section2_text > p{
-    text-align: center;
+  .section .section_content2 .section2_text{
+    text-align: center !important;
   }
+  .section .section_content3 .section3_text{
+    text-align: center !important;
+  }
+.section > .section_content3 > .section3_text > h1 {
+    text-align: center !important;
+  }
+.section > .section_content2 > .section2_text > h1{
+    text-align: center !important;
+  }
+
 }
 
 .section > .section_content3{
@@ -517,10 +546,10 @@ h1,h2,h3,h4,h5,h6
     padding: 3px 10px 5px 8px;
 }
 
-#myNavbar{
+/*#myNavbar{
   font-family: "Coves";
   font-weight: bold;
-}
+}*/
 #myNavbar li:hover{
     background: #a8518a;
 }
