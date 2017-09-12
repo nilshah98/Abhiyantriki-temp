@@ -345,6 +345,7 @@ h1,h2,h3,h4,h5,h6
     /*font-size: 20px;*/
     height:100vh;
     margin: 0px 0px 0px 0px;
+    /*background: url('../bg_images/cs_bg.png');*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
