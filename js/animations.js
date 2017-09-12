@@ -6,7 +6,7 @@
 //         done();
 //     }
 // }, 100);
-$(".carousel").swipe({
+$("#myCarousel").swipe({
 
   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 
