@@ -1,3 +1,25 @@
+.navbar-right .dropdown-menu
+{
+    left:0 !important;
+    right:auto !important;
+    /*margin-right:-10px !important;*/
+}
+.dropdown-menu>li>a
+{
+  color: #9d9d9d !important;
+  background: #222;
+}
+.dropdown-menu>li>a:hover
+{
+  background: #a8518a !important;
+  color: #fff !important;
+}
+.dropdown-menu
+{
+  border-color:#080808;
+  padding: 0px !important;
+}
+
 body
 {
     overflow-x: hidden;
@@ -34,7 +56,7 @@ body::-webkit-scrollbar-thumb
 }
 .headimage
 {
-  height:50vh;
+  height:40vh;
   position:relative;
 }
 .centerer
