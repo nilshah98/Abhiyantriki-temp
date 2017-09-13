@@ -9,6 +9,13 @@
     src: url('../fonts/Coves-Bold.otf') format('opentype');
     font-weight: bold;
 }
+@media screen and (max-width: 768px)
+{
+  .carousel-caption h3
+  {
+    font-size: 18px;
+  }
+}
 *
 {
   font-family: "Roboto";
@@ -620,10 +627,11 @@ body{
 .carousel-caption h3
 /*, .carousel .icon-container,
 .carousel-caption button*/ {
-  background:rgba(0,0,0,0.3);
+  color: #000;
+  /*background:rgba(0,0,0,0.3);*/
 }
 .carousel-caption h3 {
-  padding: .5em;
+  /*padding: .5em;*/
 }
 .carousel .icon-container {
   display: inline-block;
@@ -895,9 +903,9 @@ h1 {
   transition: all 0.3s;
 }
 .itemx:hover img {
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .item-overlay
@@ -910,22 +918,22 @@ h1 {
 }
 .itemx:hover .item-overlay
 {
-background:-webkit-linear-gradient(45deg, rgba(168,81,138,0.9) 0%, rgba(122,118,157,0.3) 50%, rgba(220,96,56,0.9) 100%);
+/*background:-webkit-linear-gradient(45deg, rgba(168,81,138,0.9) 0%, rgba(122,118,157,0.3) 50%, rgba(220,96,56,0.9) 100%);*/
 
 }
 .itemx:hover .textx
 {
-  font-size: 1.0em;
+  font-size: 1.7em;
 }
 .textx
 {
   top:50%;
-  color: #222;
+  color: #fff;
   width: 100%;
 text-align: center;
 padding: 10px;
 z-index: 1000;
-font-size: 0.7em;
+font-size: 1.2em;
 /*color: #fff;*/
 }
 body
