@@ -25,7 +25,7 @@
 }
         #section1 .section_content1
         {
-          padding-top: 50px;
+          padding-top: 5vmax;
         }
 
 /*#loader {
@@ -468,7 +468,7 @@ body{
     height:100vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
-    background: url('../images/bg_images/parvaah_bg.jpg');
+    background: url('../images/bg_images/parvaah_bg.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
