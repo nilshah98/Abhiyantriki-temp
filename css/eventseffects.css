@@ -1,3 +1,14 @@
+.slide1, .slide2, .slide3, .slide4
+{
+  background-image: url("../images/bg_images/cs_bg.png");
+  /*background: red;*/
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @font-face {
     font-family: Coves;
     src: url('../fonts/Coves-Light.otf') format('opentype');
