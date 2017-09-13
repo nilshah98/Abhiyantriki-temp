@@ -16,8 +16,18 @@
 * h1,h2,h3,h4,h5,h6
 {
   font-family: Coves !important;
+  /*font-weight: bold !important;*/
+}
+#aboutheading
+{
+  font-family: Coves !important;
   font-weight: bold !important;
 }
+        #section1 .section_content1
+        {
+          padding-top: 50px;
+        }
+
 /*#loader {
               position: fixed;
               left: 0px;
@@ -662,7 +672,7 @@ h1 {
   transform: translate(-50%, -50%); height: 160px;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
-  font-size: 35px;
+  font-size:23px;
   line-height: 40px;
   color: #ecf0f1; }
 
@@ -672,14 +682,14 @@ h1 {
   height: 40px;
   padding: 0 20px; }
 
-.content__container:before {
+/*.content__container:before {
   content: '[';
-  left: 0; }
-
+  left: 0; }*/
+/*
 .content__container:after {
   content: ']';
   position: absolute;
-  right: 0; }
+  right: 0; }*/
 
 .content__container:after, .content__container:before {
   position: absolute;
@@ -701,7 +711,7 @@ h1 {
 
 .content__container__list {
   margin-top: 0;
-  padding-left: 140px;
+  padding-left:160px;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
