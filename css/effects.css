@@ -172,7 +172,7 @@ body{
 }
 .section > .section_image2{
   /*display: none;*/
-  background: url('../bg_images/img_02.png');
+  background: url('../images/mainabout/img_02.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -193,7 +193,7 @@ body{
 /*Adjusting the section2 for smaller screens*/
 @media screen and (max-width: 992px)
 {
-  .section > .section2_layer{
+/*  .section > .section2_layer{
     height: 50vh;
   }
   .section > .section_image2{
@@ -201,7 +201,7 @@ body{
   }
   .section > .section_content2{
     height: 50vh;
-  }
+  }*/
   .section .section_content2 .section2_text{
     text-align: center !important;
   }
@@ -215,6 +215,33 @@ body{
     text-align: center !important;
   }
 
+}
+@media screen and (max-width: 992px)
+{
+  .section > .section_image2{
+    display: none;
+  }
+  .section > .section_content2{
+    background: url('../images/bg_images/abhiyantriki.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .section > .section_content2 > .overlay2{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    /*height: 100vh;*/
+  }
+.section > .section_content2 > .section2_text
+{
+  color: #c1c1c1;
+  height: 60vh;
+}
+  .section > .section_content2 > .section2_text > p{
+    text-align: center;
+  }
 }
 
 .section > .section_content3{
@@ -238,7 +265,7 @@ body{
 }
 .section > .section_image3{
   /*display: none;*/
-  background: url('../bg_images/img_01.png');
+  background: url('../images/mainabout/img_01.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -254,7 +281,7 @@ body{
     display: none;
   }
   .section > .section_content3{
-    background: url('../bg_images/kjsce2.png');
+    background: url('../images/bg_images/kjsce2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -357,7 +384,7 @@ body{
     /*font-size: 20px;*/
     height:100vh;
     margin: 0px 0px 0px 0px;
-    /*background: url('../bg_images/cs_bg.png');*/
+    /*background: url('../images/bg_images/cs_bg.png');*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -372,7 +399,7 @@ body{
     width: 100%;
     padding: 0px 0px 0px 0px;
     background: white;
-/*    background: url('../bg_images/temp1.jpg');
+/*    background: url('../images/bg_images/temp1.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -391,7 +418,7 @@ body{
     width: 100%;
     padding: 0px 0px 0px 0px;
     background: white;
-/*    background: url('../bg_images/temp1.jpg');
+/*    background: url('../images/bg_images/temp1.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -405,7 +432,7 @@ body{
     max-width: 100%;
     padding: 0px 0px 0px 0px;
     background: white;
-/*    background: url('../bg_images/cs_bg.png');
+/*    background: url('../images/bg_images/cs_bg.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -419,7 +446,7 @@ body{
     max-width: 100%;
     padding: 0px 0px 0px 0px;
     background: white;
-/*    background: url('../bg_images/cs_bg.png');
+/*    background: url('../images/bg_images/cs_bg.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -431,7 +458,7 @@ body{
     height:100vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
-    background: url('../bg_images/parvaah_bg.jpg');
+    background: url('../images/bg_images/parvaah_bg.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -445,7 +472,7 @@ body{
     height:100vh;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
-    background: url('../bg_images/contactus_bg.png');
+    background: url('../images/bg_images/contactus_bg.png');
     /*background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
@@ -532,13 +559,13 @@ body{
 
 /*Caoursel CSS*/
 .carousel-caption{
-  /*bottom: 20% !important ;*/
+  bottom: 10% !important ;
 }
 .main-container {
   padding: 10px 15px;
 }
 .skyblue {
-  background-image: url("../bg_images/techexpo_bg.png");
+  background-image: url("../images/bg_images/techexpo_bg.png");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -546,7 +573,7 @@ body{
   /*background-repeat: no-repeat;*/
 }
 .deepskyblue {
-  background-image: url("../bg_images/events_bg.png");
+  background-image: url("../images/bg_images/events_bg.png");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -554,7 +581,7 @@ body{
 }
 .speakersbg
 {
-  background-image: url("../bg_images/speakers.jpg");
+  background-image: url("../images/bg_images/speakers.jpg");
   height: 100%;
   width: 100%;
   background-attachment: fixed;
@@ -563,7 +590,7 @@ body{
   background-size: cover;
 }
 .darkerskyblue {
-  background-image: url("../bg_images/internshipexpo_bg.png");
+  background-image: url("../images/bg_images/internshipexpo_bg.png");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -605,11 +632,11 @@ body{
 .carousel-caption h3:first-child {
   animation-delay: 1s;
 }
-.carousel-caption h3:nth-child(2) {
-  animation-delay: 2s;
-}
+/*.carousel-caption h3:nth-child(2) {
+  animation-delay: 1s;
+}*/
 .carousel-caption a {
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 h1 {
@@ -1013,8 +1040,8 @@ body.on
 }
 #contactcontent
 {
-  background: rgba(0,0,0,0.5);
-  color: white;
+  /*background: rgba(0,0,0,0.5);*/
+  color: #313131;
 }
 #map
 {
