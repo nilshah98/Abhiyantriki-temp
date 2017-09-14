@@ -83,6 +83,11 @@ body::-webkit-scrollbar-thumb
 {
   height:50vh;
   position:relative;
+  background: url('../images/bg_images/techexpo_bg.png');
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .centerer
 {
