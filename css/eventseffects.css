@@ -1,6 +1,6 @@
 .slide1, .slide2, .slide3, .slide4
 {
-  background-image: url("../images/bg_images/cs_bg.png");
+  background-image: url("../images/bg_images/events-header.png");
   /*background: red;*/
   height: 50vh;
   width: 100%;
@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /*background-size: contain;*/
 }
 @font-face {
     font-family: Coves;

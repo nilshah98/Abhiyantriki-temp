@@ -613,9 +613,10 @@ body{
   background-size: cover;
   background-position: center;
 }
+
 .speakersbg
 {
-  background-image: url("../images/bg_images/speakers.jpg");
+  background-image: url("../images/bg_images/speakerbg.png");
   height: 100%;
   width: 100%;
   background-attachment: fixed;
