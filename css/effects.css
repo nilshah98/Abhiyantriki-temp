@@ -595,7 +595,7 @@ body{
 /*Navbar editing*/
 #logo{
     height:48px;
-    padding: 3px 10px 5px 8px;
+    padding: 3px 10px 5px 0px;
 }
 
 /*#myNavbar{
