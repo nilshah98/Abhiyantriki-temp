@@ -1,15 +1,13 @@
-.slide1, .slide2, .slide3, .slide4
+/*.slide1, .slide2, .slide3, .slide4
 {
   background-image: url("../images/bg_images/events-header.png");
-  /*background: red;*/
   height: 50vh;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-size: contain;*/
-}
+}*/
 @font-face {
     font-family: Coves;
     src: url('../fonts/Coves-Light.otf') format('opentype');
@@ -20,6 +18,16 @@
     font-family: Coves;
     src: url('../fonts/Coves-Bold.otf') format('opentype');
     font-weight: bold;
+}
+.headimage
+{
+  height:50vh;
+  position:relative;
+  background: url('../images/bg_images/events_bg.png');
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 *
 {
