@@ -638,7 +638,7 @@ body{
   background-image: url("../images/bg_images/speakerbg.png");
   height: 100%;
   width: 100%;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
