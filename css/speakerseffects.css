@@ -9,6 +9,23 @@
     src: url('../fonts/Coves-Bold.otf') format('opentype');
     font-weight: bold;
 }
+#form{
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    line-height: 41.5px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    font-size: 25px;
+    text-decoration: none;
+}
 *
 {
   font-family: "Roboto";
