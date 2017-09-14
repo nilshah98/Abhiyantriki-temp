@@ -185,13 +185,32 @@ body{
 }
 
 /*Section 2 contains two divs, one having text and the other has a background image*/
-.section > .section_content2{
+.section > .section_content8{
   /*background: red;*/
   font-family: Roboto;
   position: relative;
   height: 100vh;
 }
-.section > .section_content2 > .section2_text{
+.section > .section_content9{
+  /*background: red;*/
+  font-family: Roboto;
+  position: relative;
+  height: 100vh;
+}
+.section > .section_content8 > .section8_text{
+  color: black;
+  position: absolute;
+  /*position absolute wrt container div, which is parent div*/
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  width: 80%;
+  height: 50%;
+  /*Setting a wwidth and height is necessary for margin auto to work*/
+  margin:auto;
+}
+.section > .section_content9 > .section9_text{
   color: black;
   position: absolute;
   /*position absolute wrt container div, which is parent div*/
@@ -1121,4 +1140,28 @@ body.on
   padding-top: 20vh;
   height: 50vh;
   text-align: center;
+}
+#section8{
+    /*color:white;*/
+    /*font-size: 20px;*/
+    height:100vh;
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    background: url('../images/bg_images/aboutabhiyantriki-bg.png');
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section9{
+    /*color:white;*/
+    /*font-size: 20px;*/
+    height:100vh;
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    background: url('../images/bg_images/about-kjsce-bg.png');
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
