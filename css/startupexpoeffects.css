@@ -9,6 +9,22 @@
     src: url('../fonts/Coves-Bold.otf') format('opentype');
     font-weight: bold;
 }
+p{
+  text-align: center;
+}
+#images1 img
+{
+  width: 20%;
+  height: auto;
+}
+@media screen and (max-width: 768px)
+{
+  #images1 img
+  {
+    padding: 10vmin;
+    width: 100%;
+  }
+}
 #form{
     position: fixed;
     top: 70px;
@@ -100,7 +116,7 @@ body::-webkit-scrollbar-thumb
 {
   height:50vh;
   position:relative;
-  background: url('../images/bg_images/internshipexpo_bg.png');
+  background: url('../images/bg_images/sexpo.png');
   /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
