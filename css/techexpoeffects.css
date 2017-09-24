@@ -122,3 +122,46 @@ hr{
     height: 1px !important;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+.parent
+{
+  display: flex;
+  flex-direction: row;
+  /*border: 5px solid red;*/
+}
+.content
+{
+  align-self: center;
+}
+.image
+{
+  align-self: center;
+}
+.content
+{
+  padding: 10px;
+  flex: 1;
+}
+.main :nth-child(2n+1) :nth-child(1)
+{
+  text-align: right;
+}
+.main :nth-child(2n) :nth-child(2)
+{
+  order: -1
+}
+@media (max-width: 762px)
+{
+  .parent
+  {
+    flex-direction: column;
+  }
+  .parent .content
+  {
+    text-align: center !important;
+  }
+  .image
+  {
+    order: -1;
+    width: 50vmin !important;
+  }
+}
