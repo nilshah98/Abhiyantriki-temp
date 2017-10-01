@@ -1202,5 +1202,27 @@ body.on
   padding-top: 10vh;
   padding-left: 10px;
   padding-right: 10px;
-  min-height: 50vh;
+  min-height: 40vh;
+}
+#specialcontent1
+{
+  position: relative;
+  height: 50vh;
+}
+#actualcontent1
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 992px)
+{
+  #actualcontent1
+  {
+    font-size: 1.2em;
+  }
 }
