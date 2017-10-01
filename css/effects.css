@@ -1198,8 +1198,9 @@ body.on
 }
 #headerimage1
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-90%);
+  text-align: center;
+  padding-top: 10vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 50vh;
 }
